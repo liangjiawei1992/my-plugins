@@ -1,6 +1,8 @@
 # 插件
 ### 一、h5 banner滑动（基于zepto || jquery）
+
 *调用方式
+
 	$('.banner ul').myslide({
 		loop: true,
 		autoplay: {
@@ -13,6 +15,7 @@
 		},
 		dur: 800
 	});
+
 *参数说明
 
 	childTag: 'li',
