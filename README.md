@@ -1,5 +1,5 @@
 # 插件
-### 一、h5 banner滑动（基于zepto || jquery）
+### 一、h5 banner滑动---slide（基于zepto || jquery）
 
 *调用方式
 
