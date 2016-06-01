@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>slide</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<section class="banner">
+		<ul>
+			<li><a href="#"><img src="img/banner.jpg" alt=""></a></li>
+			<li><a href="#"><img src="img/banner.jpg" alt=""></a></li>
+			<li><a href="#"><img src="img/banner.jpg" alt=""></a></li>
+			<li><a href="#"><img src="img/banner.jpg" alt=""></a></li>
+		</ul>
+		<div class="showbox"></div>
+	</section>
+</body>
+<script src="js/zepto-1.2.min.js"></script>
+<script src="js/myslide.js"></script>
+<script>
+	$('.banner ul').myslide({
+		loop: true,
+		autoplay: {
+			play: true,
+			time: 3000
+		},
+		process: {
+			show: true,
+			processBox: '.showbox'
+		},
+		dur: 800
+	});
+</script>
+</html>
