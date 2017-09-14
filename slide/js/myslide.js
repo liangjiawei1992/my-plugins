@@ -85,7 +85,7 @@
 				var touchs = e.changedTouches[0] || touches[0];
 				this.oX.startX = touchs.pageX;
 				e.stopPropagation();
-				$(document).on('touchmove.mymove',function(e){
+				$(this.$element).on('touchmove.mymove',function(e){
 					_this.moveFn(e);
 				});
 			};
@@ -180,6 +180,10 @@
 				if(_this.options.startIndex == _this.len -1 ){
 					_this.options.startIndex = 1;
 					_this.animateFn(0,0);
+				};
+				if(_this.options.startIndex == _this.len){
+					_this.animateFn(-_this.options.viewWidth,0);
+					_this.options.startIndex = 2;
 				};
 				_this.curIndex = _this.options.startIndex - 1;
 				goX = -_this.options.startIndex*_this.options.viewWidth;
